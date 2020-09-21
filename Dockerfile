@@ -1,8 +1,6 @@
 FROM ubuntu:20.04
 
-RUN apt-get update && apt-get install openssh-server -y \
-    && /etc/init.d/ssh start \
-    && ps -e|grep ssh
+RUN apt-get update && apt-get install vim -y
 
 FROM node:12.18.3
 
